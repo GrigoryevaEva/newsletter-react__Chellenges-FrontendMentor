@@ -1,0 +1,15 @@
+.button {}
+
+.card {
+  @include card ();
+}
+
+.header {
+  font-family: 'RobotoBold';
+  font-size: $font-size-header;
+}
+
+.text {
+  font-size: $font-size-main;
+  line-height: $line-height-main;
+}
