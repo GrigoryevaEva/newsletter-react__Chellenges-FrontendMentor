@@ -1,0 +1,10 @@
+* {
+  font-family: 'RobotoRegular';
+  color: $text-color-main;
+}
+
+body {
+  @include flex (row, center, center);
+
+  background-color: $background-color-main;
+}
