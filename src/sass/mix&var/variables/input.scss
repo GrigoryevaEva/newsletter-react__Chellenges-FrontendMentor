@@ -1,0 +1,18 @@
+$height-input: 3.5rem;
+$background-color-input: hsl(0, 0%, 100%);
+$text-color-input: hsl(234, 29%, 20%);
+$placeholder-color-input: hsl(231, 7%, 60%);
+
+// default
+
+$border-color-input-default: hsl(231, 7%, 60%);
+
+// active
+
+$border-color-input-active: hsl(234, 29%, 20%);
+
+// error
+
+$background-color-input-error: hsl(4, 100%, 67%, 15%);
+$border-color-input-error: hsl(4, 100%, 67%);
+$text-color-input-error: hsl(4, 100%, 67%);
