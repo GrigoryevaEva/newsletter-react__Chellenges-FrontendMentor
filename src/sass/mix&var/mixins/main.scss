@@ -1,0 +1,13 @@
+@mixin flex ($fl-drc, $jst-cnt, $ali-itm) {
+  display: flex;
+  flex-direction: $fl-drc;
+  justify-content: $jst-cnt;
+  align-items: $ali-itm;
+}
+
+@mixin text-main ($fnt-wght) {
+  color: $text-color-main;
+  font-size: $font-size-main;
+  line-height: $line-height-main;
+  font-weight: $fnt-wght;
+}

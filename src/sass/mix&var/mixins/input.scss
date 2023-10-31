@@ -1,0 +1,30 @@
+@mixin input() {
+  height: $height-input;
+  width: 100%;
+
+  background-color: $background-color-input;
+  color: $text-color-input;
+
+  border-radius: $border-radius-main;
+  border: 1px;
+  border-style: solid;
+  border-color: $border-color-input-default;
+
+  ::-webkit-input-placeholder,
+  :-moz-placeholder,
+  :-moz-placeholder,
+  :-ms-input-placeholder {
+    color: $placeholder-color-input;
+  }
+
+  &:active {
+    border-color: $border-color-input-active;
+  }
+}
+
+@mixin input-error() {
+  background-color: $background-color-input-error !important;
+  color: $text-color-input-error !important;
+
+  border-color: $border-color-input-error !important;
+}
