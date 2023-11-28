@@ -1,10 +1,24 @@
-import MainCardList from "./MainCardInfoList";
+import MainCardInfoListPoint from "./MainCardInfoListPoint";
 
 const MainCardInfoList = () => {
+  const points = [
+    {
+      text: 'Product discovery and building what matters',
+    },
+    {
+      text: 'Measuring to ensure updates are a success',
+    },
+    {
+      text: 'And much more!',
+    },
+  ]
+
   return (
-    <div className="card-subscribe__info-list">
-      {/* динамическое отображение нескольких элементов */}
-    </div>
+    <ul className="card-subscribe__info-list">
+      {points.map((point) => (
+        <MainCardInfoListPoint text={point.text}/>
+      ))}
+    </ul>
   )
 }
 

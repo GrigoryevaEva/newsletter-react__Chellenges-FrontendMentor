@@ -1,13 +1,28 @@
 .card-subscribe__info {
-  &-header {}
+  @include flex (column, center, start);
+  gap: 1.5rem;
 
-  &-description {}
+  width: 360px;
+
+  margin: 0 2rem 0 2rem;
+
+  @media (max-width: 570px) {
+    width: 80vw;
+
+    transition: all 0.2s ease-out;
+  }
 
   &-list {
-    &-point {
-      &-icon {}
+    @include flex (column, center, start);
+    gap: 1rem;
 
-      &-text {}
+    &-point {
+      @include flex (row, center, center);
+      gap: 1rem;
+
+      &-text {
+        margin-top: 4px;
+      }
     }
   }
 }

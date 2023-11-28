@@ -1,13 +1,45 @@
 .card-subscribe__subscribe {
-  &-form {
-    &-header {
-      &-label {}
+  @include flex (column, center, start);
+  gap: 1.5rem;
 
-      &-error-message {}
-    }
+  width: 360px;
 
-    &-input {}
+  @media (max-width: 570px) {
+    width: 80vw;
+
+    transition: all 0.2s ease-out;
   }
 
-  &-button {}
+  &-form {
+    @include flex (column, center, start);
+    gap: 0.5rem;
+
+    width: 100%;
+
+    &-header {
+      @include flex (row, space-between, center);
+
+      width: 100%;
+
+      font-family: 'RobotoBold';
+      font-size: $font-size-label;
+
+      &-label,
+      &-error-message {
+        font-family: 'RobotoBold';
+      }
+
+      &-error-message {
+        color: $text-color-error;
+      }
+    }
+
+    &-input {
+      @include input();
+
+      &-error {
+        @include input-error();
+      }
+    }
+  }
 }

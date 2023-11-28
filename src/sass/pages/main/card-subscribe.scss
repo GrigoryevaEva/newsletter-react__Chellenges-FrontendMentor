@@ -1,9 +1,53 @@
 .card-subscribe {
-  &__box {}
+  display: grid;
+  grid-template-areas: "section hero";
 
-  &__hero {}
+  @media (max-width: 762px) {
+    grid-template-areas: "hero"
+                        "section";
+  }
 
-  &__info {}
+  .grid-section {
+    grid-area: section;
+  }
 
-  &__subscribe {}
+  .grid-hero {
+    grid-area: hero;
+  }
+
+  &__box {
+    padding: 1rem;
+
+    &-section {
+      @include flex (column, center, center);
+      gap: 2.5rem;
+
+      @media (max-width: 570px) {
+        justify-content: start;
+
+        padding: 1rem 0 2rem 0;
+      }
+    }
+
+    &-mobile {
+      @media (max-width: 762px) {
+        padding: 0;
+        
+        transition: all 0.2s ease-out;
+      }
+      @media (max-width: 570px) {
+        width: 100vw;
+
+        transition: all 0.2s ease-out;
+      }
+    }
+  }
+
+  &__hero-desktop {
+    border-radius: 0.5rem;
+  }
+
+  &__hero-mobile {
+    width: 100%;
+  }
 }

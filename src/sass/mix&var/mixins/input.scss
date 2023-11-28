@@ -10,6 +10,8 @@
   border-style: solid;
   border-color: $border-color-input-default;
 
+  padding: 0 1rem 0 1rem;
+
   ::-webkit-input-placeholder,
   :-moz-placeholder,
   :-moz-placeholder,
@@ -23,6 +25,8 @@
 }
 
 @mixin input-error() {
+  @include input();
+  
   background-color: $background-color-input-error !important;
   color: $text-color-input-error !important;
 

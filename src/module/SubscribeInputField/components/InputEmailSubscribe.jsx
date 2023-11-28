@@ -1,7 +1,7 @@
-const InputEmailSubscribe = () => {
+const InputEmailSubscribe = (props) => {
+  
   return (
-    <div className="card-subscribe__subscribe-form-input">
-    </div>
+    <input className={props.inputStyle} placeholder="email@company.com" value={props.value} onChange={props.onChange}/>
   )
 }
 

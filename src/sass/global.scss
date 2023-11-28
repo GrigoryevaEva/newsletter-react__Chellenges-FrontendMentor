@@ -7,4 +7,9 @@ body {
   @include flex (row, center, center);
 
   background-color: $background-color-main;
+
+  @media (max-width: 570px) {
+    align-items: start;
+    background-color: $background-color-main-mobile;
+  }
 }

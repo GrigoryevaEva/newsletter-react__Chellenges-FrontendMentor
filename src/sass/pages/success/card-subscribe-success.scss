@@ -1,11 +1,27 @@
 .card-subscribe-success {
-  &__icon {}
+  @include flex (column, center, start);
+  gap: 2rem;
 
-  &__info {
-    &-header {}
+  
+  width: 450px;
 
-    &-description {}
+  padding: 3rem;
+
+  @media (max-width: 570px) {
+    width: 80vw;
+
+    padding: 3rem 0 2rem 0;
+
+    justify-content: start;
   }
 
-  &__button {}
+  p {
+    flex: 1;
+  }
+
+  &__button {
+    @media (max-width: 570px) {
+      align-content: flex-end;
+    }
+  }
 }

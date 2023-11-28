@@ -1,4 +1,6 @@
-.button {}
+.button {
+  @include button();
+}
 
 .card {
   @include card ();
@@ -7,9 +9,19 @@
 .header {
   font-family: 'RobotoBold';
   font-size: $font-size-header;
+
+  @media (max-width: 570px) {
+    font-size: $font-size-header-mobile;
+
+    transition: all 0.2s ease-out;
+  }
 }
 
 .text {
   font-size: $font-size-main;
   line-height: $line-height-main;
+
+  span {
+    font-family: 'RobotoBold';
+  }
 }

@@ -1,17 +1,20 @@
 // colors
 
 $background-color-main: hsl(235, 18%, 26%);
+$background-color-main-mobile: hsl(0, 0%, 100%);
 
 $text-color-main: hsl(234, 29%, 20%);
+$text-color-error: hsl(4, 100%, 67%);
 
 // border-radius
 
-$border-radius-main: 0.7rem;
+$border-radius-main: 0.4rem;
 
 // font
 
 $font-size-main: 1rem;
 $font-size-header: 3.5rem;
-$font-size-label: 0.5rem;
+$font-size-header-mobile: 3rem;
+$font-size-label: 0.7rem;
 
 $line-height-main: 1rem;
